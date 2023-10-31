@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>contact </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.container-md {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 3rem;
+  }
+
+  .container-md {
+    padding: 0 3rem;
+  }
+}
+
+/* Header */
+.header {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--grey-alt);
+  overflow: hidden;
+}
+
+.nav {
+  padding: 1.6rem 0;
+}
+
+.nav.fix-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #243a6f;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+
+.nav.fix-nav .nav-link,
+.nav.fix-nav .logo,
+.nav.fix-nav .cart-icon,
+.nav.fix-nav .hamburger {
+  color: #fff;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h1 {
+  font-size: 2.5rem;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  padding: 0.8rem 1rem;
+  transition: all 300ms ease-in-out;
+}
+
+.nav-link.icon {
+  font-size: 3rem;
+}
+
+.top-nav {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+.cart-icon {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    max-width: 40rem;
+    height: 100%;
+    background-color: #fff;
+    transition: all 500ms ease-in-out;
+    z-index: 100;
+  }
+
+  .menu.show {
+    left: 0;
+  }
+
+  .top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #243a6f;
+    padding: 1rem 1.6rem;
+  }
+
+  .top-nav .logo {
+    color: #fff;
+  }
+
+  .top-nav .close {
+    color: #fff;
+    font-size: 3rem;
+    padding: 1rem;
+    cursor: pointer;
+  }
+
+  .cart-icon {
+    display: block;
+    font-size: 3rem;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 3rem;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  .nav-link:link,
+  .nav-link:visited {
+    display: block;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+  }
+
+  .nav.fix-nav .nav-link {
+    color: #243a6f;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem 1.6rem;
+  }
+
+  body.show::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 4;
+  }
+
+  .nav.show {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .nav-link.icon {
+    display: none;
+  }
+}
+      *{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+.contact-section{
+  background: url(ss7.jpeg) no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+}
+.contact-section h1{
+  text-align: center;
+  color: #ddd;
+}
+.border{
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #2980b9;
+}
+
+    </style>
+
+  </head>
+  <body>
+     <!-- Navigation -->
+     <nav class="nav">
+      <div class="navigation container">
+        <div class="logo">
+          <h1>Clothing</h1>
+        </div>
+
+        <div class="menu">
+          <div class="top-nav">
+            <div class="logo">
+              <h1>Clothing</h1>
+            </div>
+            <div class="close">
+              <i class="bx bx-x"></i>
+            </div>
+          </div>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link scroll-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="product.html" class="nav-link">Products</a>
+            </li>
+            <li class="nav-item">
+              <a href="aboutus.html" class="nav-link scroll-linaboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contactus.html" class="nav-link scroll-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="cart.html" class="nav-link icon"><i class="bx bx-shopping-bag"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <a href="cart.html" class="cart-icon">
+          <i class="bx bx-shopping-bag"></i>
+        </a>
+
+        <div class="hamburger">
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </nav>
+
+
+<div class="contact-section">
+
+  <h1>Contact Us</h1>
+  <div class="border"></div>
+  <form class="contact-form" action="index.html" method="post">
+    <input type="text" class="contact-form-text" placeholder="Your name">
+    <input type="email" class="contact-form-text" placeholder="Your email">
+    <input type="text" class="contact-form-text" placeholder="Your phone">
+    <textarea class="contact-form-text" placeholder="Your message"></textarea>
+    <input type="submit" class="contact-form-btn" value="Send">
+  </form>
+</div>
+
+
+  </body>
+</html>
